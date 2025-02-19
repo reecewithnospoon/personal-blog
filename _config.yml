@@ -18,20 +18,34 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Reece's Blog
+title: Reece's Pieces
 email: dev@reecehayward.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is a blog about my thoughts and experiences regarding:
+  Software Development; Philosophy; and Personal Development.
+  Most of these ideas are conceived in the shower.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+url: "https://blog.reecehayward.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: notarealuser
 github_username:  reecewithnospoon
 
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+# Github Pages
 lsi: false
 safe: true
-source: reecewithnospoon.github.io
+source: .
 incremental: false
 highlighter: rouge
 gist:
@@ -40,10 +54,15 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "sunrise"
+
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
