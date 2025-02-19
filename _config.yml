@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Reece's Pieces
+subtitle: Pieces of my mind
 email: dev@reecehayward.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a blog about my thoughts and experiences regarding:
@@ -28,6 +29,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.reecehayward.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: notarealuser
 github_username:  reecewithnospoon
+locale: en-GB
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-dark-orange" # "github-dark"
+    issue_term: "pathname"
+    label: "comment" # Optional - must be existing label.
 
 # Defaults
 defaults:
@@ -38,9 +46,32 @@ defaults:
     values:
       layout: single
       read_time: true
+      author_profile: true
       comments: true
       share: true
       related: true
+      header:
+        overlay_image: /assets/images/unsplash-3.jpg
+        overlay_filter: 0.5
+        overlay_color: "#000"
+      author:
+        name: "Reece Hayward"
+        avatar: "https://avatars.githubusercontent.com/u/4647377?s=400&v=4"
+        bio: "A happy little programmer"
+        location: "Tokyo"
+        links:
+          - label: "Dev Website"
+            icon: "fas fa-fw fa-link"
+            url: "https://dev.reecehayward.com"
+          - label: "X"
+            icon: "fab fa-fw fa-square-x-twitter"
+            url: "https://x.com/reecewithnospoon"
+          - label: "GitHub"
+            icon: "fab fa-fw fa-github"
+            url: "https://github.com/reecewithnospoon"
+          - label: "Instagram"
+            icon: "fab fa-fw fa-instagram"
+            url: "https://instagram.com/reecewithnospoon"
 
 # Github Pages
 lsi: false
