@@ -20,3 +20,5 @@ Some things I wanted to write about
 Other TODO's
 
 - Dockerize this fucker
+- Localize this mf
+  - At least to Japanese

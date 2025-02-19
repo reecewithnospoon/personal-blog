@@ -1,17 +1,19 @@
 ---
 title: "Here is a squirrel"
 layout: splash
-date: 2016-03-23T11:48:41-04:00
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/squirrel-3.jpg
-  actions:
-    - label: "Download"
-      url: "https://github.com/mmistakes/minimal-mistakes/"
+date: 2025-02-23 21:21:00 +0900
+# header:
+# # TODO make this the latest post?
+#   overlay_color: "#000"
+#   overlay_filter: "0.5"
+#   overlay_image: /assets/images/squirrel-3.jpg
+#   actions:
+#     - label: "Read the latest post"
+#       url: "https://lalala"
 excerpt: "He wanna be your friend."
 intro: 
   - excerpt: 'A place to gather my thoughts, no matter their value.'
+# TODO make these tags and/or posts
 feature_row:
   - image_path: assets/images/squirrel-3.jpg
     alt: "placeholder image 1"
@@ -52,6 +54,24 @@ feature_row4:
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
+<div class="page__hero--overlay"
+  style="background-color: #000;background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ site.posts.first.header.overlay_image }}');"
+>
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        {{ site.posts.first.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+      </h1>
+        <p class="page__lead">{{ site.posts.first.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+      {% include page__meta.html %}
+        <p>
+          <a href="{{ site.posts.first.url | relative_url }}" class="btn btn--light-outline btn--large">{{ action.label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+        </p>
+    </div>
+  {% if page.header.caption %}
+    <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+  {% endif %}
+</div>
+
 
 {% include feature_row id="intro" type="center" %}
 
