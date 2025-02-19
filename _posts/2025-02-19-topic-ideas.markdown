@@ -14,6 +14,8 @@ Some things I wanted to write about
 - How my learning experience of AWS differs to another post I read
 - Getting into fitness at 30
   - Always being a late bloomer
+- Things I've learned gradually living in Japan
+  - What I wish I could have known sooner
 
 Other TODO's
 
