@@ -35,8 +35,8 @@ To set up the blog locally, follow these steps:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/reecewithnospoon/reecewithnospoon.github.io.git
-    cd reecewithnospoon.github.io
+    git clone https://github.com/reecewithnospoon/personal-blog.git
+    cd personal-blog
     ```
 
 2. Install the required gems:

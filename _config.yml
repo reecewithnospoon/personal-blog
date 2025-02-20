@@ -29,7 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.reecehayward.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: notarealuser
 github_username:  reecewithnospoon
-repository: reecewithnospoon/reecewithnospoon.github.io
+repository: reecewithnospoon/personal-blog
 comments:
   provider: "utterances"
   utterances:
