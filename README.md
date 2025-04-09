@@ -48,7 +48,7 @@ To set up the blog locally, follow these steps:
 3. Serve the site locally:
 
     ```sh
-    bundle exec jekyll serve
+    bundle exec jekyll serve --livereload
     ```
 
 4. Open your browser and navigate to `http://localhost:4000`.
@@ -74,16 +74,8 @@ To set up the blog locally, follow these steps:
 
 ### Customizing the Navigation
 
-Edit the  file to update the navigation links.
+Edit the `_data/navigation.yml` file to update the navigation links.
 
 ### Changing the Site Configuration
 
-Edit the  file to update the site settings such as title, description, and social links.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+Edit the `_config.yml` file to update the site settings such as title, description, and social links.
