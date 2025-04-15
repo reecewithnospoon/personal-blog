@@ -1,6 +1,6 @@
 ---
-title:  "Actually doing it: Atomic Habits"
-excerpt: "Applying Atomic Habits to daily life: Turning inspiration into action"
+title:  "Applied philosophy: Atomic Habits"
+excerpt: "Turning inspiration into real, actionable steps"
 date:   2025-02-20 13:10:00 +0900
 categories: philosophy self-improvement
 header:
